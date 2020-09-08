@@ -1,0 +1,63 @@
+/* 字体图标的css */
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    margin-right: 8px;
+}
+
+.layui-icon {
+    margin: 0 8px 0 20px;
+}
+
+.layui-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.layui-body {
+    overflow: hidden;
+}
+
+a {
+    transition: none!important;
+}
+
+.user-img {
+    height: 60px;
+    line-height: 60px;
+    font-size: 12px;
+    /* padding: 5px; */
+    text-align: center;
+    user-select: none;
+}
+
+.layui-side-scroll .user-img {
+    border-bottom: 1px solid #000;
+}
+
+.layui-nav-img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.text-avatar {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(65, 148, 136);
+    margin-right: 10px;
+}

@@ -54,24 +54,24 @@ $(function() {
     });
     //登陆功能编写
     $('#fm1').on('submit', function(e) {
-        //阻止默认行为
-        //alert(11)
-        e.preventDefault();
-        var data = $(this).serialize();
-        // 发起ajax请求
-        $.post('/api/login', data, function(res) {
-            if (res.status !== 0) {
-                return layer.msg('登陆失败');
-            };
-            layer.msg('登陆成功，正在跳转到首页');
-            //console.log(res);
-            localStorage.setItem('token', res.token)
-            setTimeout(function() {
-                //console.log(location.href);
-                location.href = 'index.html'
+            //阻止默认行为
+            //alert(11)
+            e.preventDefault();
+            var data = $(this).serialize();
+            // 发起ajax请求
+            $.post('/api/login', data, function(res) {
+                if (res.status !== 0) {
+                    return layer.msg('登陆失败');
+                };
+                layer.msg('登陆成功，正在跳转到首页');
+                //console.log(res);
+                localStorage.setItem('token', res.token)
+                setTimeout(function() {
+                    //console.log(location.href);
+                    location.href = 'index.html'
 
-            }, 3000)
+                }, 3000)
+            })
         })
-    })
-    console.log(localStorage.getItem('token'));
+        //console.log(localStorage.getItem('token'));
 })
