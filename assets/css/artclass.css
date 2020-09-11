@@ -1,0 +1,22 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #ccc;
+}
+
+.layui-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fm1,
+#fm2 {
+    padding-right: 30px;
+    padding-top: 40px;
+}
